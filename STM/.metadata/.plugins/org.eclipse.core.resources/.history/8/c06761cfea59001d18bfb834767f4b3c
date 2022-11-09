@@ -1,0 +1,18 @@
+/*
+ * setTrafficLight.h
+ *
+ *  Created on: Nov 1, 2022
+ *      Author: Linh
+ */
+
+#ifndef INC_SETTRAFFICLIGHT_H_
+#define INC_SETTRAFFICLIGHT_H_
+
+#include "global.h"
+
+void setDefault();
+void setRedLight();
+void setGreenLight();
+void setYellowLight();
+
+#endif /* INC_SETTRAFFICLIGHT_H_ */

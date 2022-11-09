@@ -1,0 +1,14 @@
+/*
+ * 7seg_display.h
+ *
+ *  Created on: Nov 1, 2022
+ *      Author: Linh
+ */
+
+#ifndef INC_7SEG_DISPLAY_H_
+#define INC_7SEG_DISPLAY_H_
+
+#include "global.h"
+void 7seg_display();
+
+#endif /* INC_7SEG_DISPLAY_H_ */

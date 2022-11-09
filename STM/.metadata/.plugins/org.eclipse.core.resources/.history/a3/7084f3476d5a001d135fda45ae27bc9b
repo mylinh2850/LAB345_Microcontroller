@@ -1,0 +1,18 @@
+/*
+ * global.c
+ *
+ *  Created on: Nov 1, 2022
+ *      Author: Linh
+ */
+
+
+#include "global.h"
+
+int status1 = 0;
+int status2 = 0;
+int index = 0;
+
+int counter = 10;
+int redTimer = 5;
+int greenTimer = 3;
+int yellowTimer = 2;

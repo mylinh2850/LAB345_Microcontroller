@@ -1,0 +1,33 @@
+/*
+ * setTrafficLight.c
+ *
+ *  Created on: Nov 1, 2022
+ *      Author: Linh
+ */
+
+
+#include "setTrafficLight.h"
+
+void setDefault() {
+	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, SET);
+	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, SET);
+	HAL_GPIO_WritePin(Y1_GPIO_Port, Y1_Pin, SET);
+}
+
+void setRedLight() {
+	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, RESET);
+	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, SET);
+	HAL_GPIO_WritePin(Y1_GPIO_Port, Y1_Pin, SET);
+}
+
+void setGreenLight() {
+	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, SET);
+	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, RESET);
+	HAL_GPIO_WritePin(Y1_GPIO_Port, Y1_Pin, SET);
+}
+
+void setYellowLight() {
+	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, SET);
+	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, SET);
+	HAL_GPIO_WritePin(Y1_GPIO_Port, Y1_Pin, RESET);
+}
