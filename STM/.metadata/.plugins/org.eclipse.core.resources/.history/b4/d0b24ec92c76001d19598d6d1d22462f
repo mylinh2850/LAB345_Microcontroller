@@ -1,0 +1,17 @@
+/*
+ * led_task.h
+ *
+ *  Created on: Nov 24, 2022
+ *      Author: Linh
+ */
+
+#ifndef INC_LED_TASK_H_
+#define INC_LED_TASK_H_
+
+void led1_blinky();		//led RED
+void led2_blinky();		//led YELLOW
+void led3_blinky();		//led BLUE
+void led4_blinky();		//led ORANGE
+void led5_blinky();		//led GREEN
+
+#endif /* INC_LED_TASK_H_ */

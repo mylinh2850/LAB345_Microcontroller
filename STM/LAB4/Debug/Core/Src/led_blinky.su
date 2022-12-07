@@ -1,0 +1,5 @@
+../Core/Src/led_blinky.c:10:6:led1_blinky	8	static
+../Core/Src/led_blinky.c:15:6:led2_blinky	8	static
+../Core/Src/led_blinky.c:20:6:led3_blinky	8	static
+../Core/Src/led_blinky.c:25:6:led4_blinky	8	static
+../Core/Src/led_blinky.c:30:6:led5_blinky	8	static
