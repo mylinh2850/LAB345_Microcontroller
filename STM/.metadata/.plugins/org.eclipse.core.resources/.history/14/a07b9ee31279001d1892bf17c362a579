@@ -1,0 +1,13 @@
+/*
+ *  uart_communication.h
+ *
+ *  Created on: Dec 11, 2022
+ *      Author: Linh
+ */
+
+#ifndef INC__UART_COMMUNICATION_H_
+#define INC__UART_COMMUNICATION_H_
+
+
+
+#endif /* INC__UART_COMMUNICATION_H_ */

@@ -1,0 +1,1598 @@
+15:41:49 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+../Core/Src/command_parser.c: In function 'clear_command':
+../Core/Src/command_parser.c:56:13: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   56 |  command[0] = "\0";
+      |             ^
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15240	    120	   1888	  17248	   4360	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:42:00 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:45:24 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:27:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   27 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:37:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   37 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:40:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   40 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:41:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   41 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:41:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:45:46 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:28:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   28 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:38:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   38 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:41:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   41 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:42:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   42 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:42:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/main.c:45: multiple definition of `hadc1'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/ uart_communication.c:14: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/main.c:49: multiple definition of `huart2'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/ uart_communication.c:15: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: LAB5.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:46:11 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   26 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:47:31 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   26 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:47:46 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:19: warning: character constant too long for its type
+   26 |      sprintf(str, '\r\n! ADC =%d#\r\n', ADC_value), 1000); // Print response
+      |                   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:26:19: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../Core/Src/ uart_communication.c:11:
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:32: note: expected 'const char * restrict' but argument is of type 'int'
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |                                ^
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15216	    120	   1888	  17224	   4348	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:47:58 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   26 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:48:08 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:19: error: stray '\' in program
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                   ^
+../Core/Src/ uart_communication.c:26:21: error: stray '\' in program
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                     ^
+../Core/Src/ uart_communication.c:26:20: error: 'r' undeclared (first use in this function)
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                    ^
+../Core/Src/ uart_communication.c:26:20: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/ uart_communication.c:26:21: error: expected ')' before 'n'
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                     ^~
+      |                     )
+../Core/Src/ uart_communication.c:26:32: error: stray '#' in program
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                                ^
+../Core/Src/ uart_communication.c:26:33: error: stray '\' in program
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                                 ^
+../Core/Src/ uart_communication.c:26:35: error: stray '\' in program
+   26 |      sprintf(str, \r\n! ADC =%d#\r\n, ADC_value), 1000); // Print response
+      |                                   ^
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+make: *** [Core/Src/subdir.mk:43: Core/Src/ uart_communication.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:48:13 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   26 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:48:44 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:25:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:35:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   35 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:38:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   38 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:39:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   39 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:39:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:48:49 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:25:6: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   25 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |      ^~~~~~~
+../Core/Src/ uart_communication.c:25:6: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/ uart_communication.c:11:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   10 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   11 | #include <string.h>
+../Core/Src/ uart_communication.c:25:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:35:6: warning: incompatible implicit declaration of built-in function 'sprintf'
+   35 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |      ^~~~~~~
+../Core/Src/ uart_communication.c:35:6: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/ uart_communication.c:35:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   35 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:6: warning: incompatible implicit declaration of built-in function 'sprintf'
+   39 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~
+../Core/Src/ uart_communication.c:39:6: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/ uart_communication.c:38:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   38 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:39:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   39 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:39:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:49:03 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   26 |      sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                               ~^        ~~~~~~~~~
+      |                                |        |
+      |                                int      uint32_t {aka long unsigned int}
+      |                               %ld
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:49:40 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:25:70: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   25 |    HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "\r\n! ADC =%d#\r\n", ADC_value), 1000); // Print response
+      |                                                                     ~^        ~~~~~~~~~
+      |                                                                      |        |
+      |                                                                      int      uint32_t {aka long unsigned int}
+      |                                                                     %ld
+../Core/Src/ uart_communication.c:35:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   35 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:38:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   38 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:39:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   39 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:39:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:50:15 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15236	    120	   1888	  17244	   435c	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:51:01 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:36:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |      sprintf(str, "! ADC =%d#\r\n", ADC_value), 1000);
+      |                           ~^        ~~~~~~~~~
+      |                            |        |
+      |                            int      uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:51:08 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:55:03 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:26:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   26 |      sprintf(str, "\r\n! ADC =%lu#\r\n", ADC_value), 1000); // Print response
+      |              ^~~
+      |              |
+      |              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/ uart_communication.c:11:
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/ uart_communication.c:36:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   36 |      sprintf(str, "! ADC =%lu#\r\n", ADC_value), 1000);
+      |              ^~~
+      |              |
+      |              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/ uart_communication.c:11:
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/ uart_communication.c:40:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |              ^~~
+      |              |
+      |              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/ uart_communication.c:11:
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:55:42 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+../Core/Src/ uart_communication.c: In function 'uart_communication_fsm':
+../Core/Src/ uart_communication.c:39:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |    HAL_UART_Transmit(&huart2, str,
+      |                               ^~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/uart_communication.h:11,
+                 from ../Core/Src/ uart_communication.c:7:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/ uart_communication.c:40:6: warning: '
+End the communication 
+   ' directive writing 26 bytes into a region of size 20 [-Wformat-overflow=]
+   40 |      sprintf(str, "\r\nEnd the communication \r\n"), 1000);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ uart_communication.c:40:6: note: 'sprintf' output 27 bytes into a destination of size 20
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:56:26 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:1136:19: error: conflicting types for 'HAL_UART_Transmit'
+ 1136 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, char *pData, uint16_t Size, uint32_t Timeout)
+      |                   ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:257:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:19: note: previous declaration of 'HAL_UART_Transmit' was here
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                   ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c: In function 'HAL_UART_Transmit':
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:1170:19: warning: pointer targets in assignment from 'char *' to 'uint8_t *' {aka 'unsigned char *'} differ in signedness [-Wpointer-sign]
+ 1170 |       pdata8bits  = pData;
+      |                   ^
+make: *** [Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk:64: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:56:57 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+15:57:01 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+15:57:06 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+15:57:29 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+15:59:06 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.list
+ 
+Finished building: LAB5.hex
+ 
+16:00:50 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+16:11:17 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15232	    120	   1888	  17240	   4358	LAB5.elf
+Finished building: default.size.stdout
+ 
+16:15:19 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15296	    120	   1888	  17304	   4398	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+16:15:24 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15296	    120	   1888	  17304	   4398	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+16:16:11 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15296	    120	   1888	  17304	   4398	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+16:16:46 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15296	    120	   1888	  17304	   4398	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+20:11:50 **** Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:7: error: 'buffer_flag' undeclared (first use in this function)
+  118 |   if (buffer_flag == 1) {
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:118:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:122:3: warning: implicit declaration of function 'uart_communiation_fsm'; did you mean 'uart_communication_fsm'? [-Wimplicit-function-declaration]
+  122 |   uart_communiation_fsm();
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   uart_communication_fsm
+../Core/Src/main.c:116:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+  116 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:130:1: error: expected identifier or '(' before '}' token
+  130 | }
+      | ^
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:15:45 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:7: error: 'buffer_flag' undeclared (first use in this function)
+  118 |   if (buffer_flag == 1) {
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:118:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:116:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+  116 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:129:1: error: expected identifier or '(' before '}' token
+  129 | }
+      | ^
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:18:17 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:38: error: 'str' undeclared (first use in this function)
+  121 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value), 1000);
+      |                                      ^~~
+../Core/Src/main.c:121:38: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:121:43: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  121 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value), 1000);
+      |                                           ^~~~~~~
+../Core/Src/main.c:121:43: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:129:1: error: expected identifier or '(' before '}' token
+  129 | }
+      | ^
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:18:40 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15296	    120	   1888	  17304	   4398	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:01:24 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:70:15: error: expected expression before '>' token
+   70 |  if ( huart - > Instance == USART2) {
+      |               ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:7: error: 'buffer_flag' undeclared (first use in this function)
+  117 |   if (buffer_flag == 1) {
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:117:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:03:51 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:70:15: error: expected expression before '>' token
+   70 |  if ( huart - > Instance == USART2) {
+      |               ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+At top level:
+../Core/Src/main.c:195:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  195 | static void MX_TIM2_Init(void) {
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:04:25 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:70:15: error: expected expression before '>' token
+   70 |  if ( huart - > Instance == USART2) {
+      |               ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:04:36 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  10564	     20	   1780	  12364	   304c	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:04:52 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10564	     20	   1780	  12364	   304c	LAB5.elf
+Finished building: default.size.stdout
+ 
+21:05:30 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:38: error: 'str' undeclared (first use in this function)
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                      ^~~
+../Core/Src/main.c:99:38: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:99:43: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                           ^~~~~~~
+../Core/Src/main.c:99:43: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:06:07 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:43: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                           ^~~~~~~
+../Core/Src/main.c:99:43: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:58: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                                         ~^     ~~~~~~~~~
+      |                                                          |     |
+      |                                                          int   uint32_t {aka long unsigned int}
+      |                                                         %ld
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13100	    120	   1800	  15020	   3aac	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:07:22 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:43: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                           ^~~~~~~
+../Core/Src/main.c:99:43: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:58: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\n", ADC_value),
+      |                                                         ~^     ~~~~~~~~~
+      |                                                          |     |
+      |                                                          int   uint32_t {aka long unsigned int}
+      |                                                         %ld
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13632	    120	   1800	  15552	   3cc0	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:09:05 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:43: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\r", ADC_value),
+      |                                           ^~~~~~~
+../Core/Src/main.c:99:43: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:58: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   99 |   HAL_UART_Transmit(&huart2, (void*) str, sprintf(str, "%d\r", ADC_value),
+      |                                                         ~^     ~~~~~~~~~
+      |                                                          |     |
+      |                                                          int   uint32_t {aka long unsigned int}
+      |                                                         %ld
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13632	    120	   1800	  15552	   3cc0	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:12:14 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:35: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                   ^~~~~~~
+../Core/Src/main.c:99:35: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:61: error: 'ADC_VALUE' undeclared (first use in this function); did you mean 'VDD_VALUE'?
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                                             ^~~~~~~~~
+      |                                                             VDD_VALUE
+../Core/Src/main.c:99:61: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:99:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/main.c:91:11: warning: variable 'ADC_value' set but not used [-Wunused-but-set-variable]
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:13:14 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:93:11: error: redefinition of 'ADC_value'
+   93 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c:91:11: note: previous definition of 'ADC_value' was here
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c:100:35: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  100 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                   ^~~~~~~
+../Core/Src/main.c:100:35: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:100:61: error: 'ADC_VALUE' undeclared (first use in this function); did you mean 'VDD_VALUE'?
+  100 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                                             ^~~~~~~~~
+      |                                                             VDD_VALUE
+../Core/Src/main.c:100:61: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:100:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  100 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/main.c:93:11: warning: variable 'ADC_value' set but not used [-Wunused-but-set-variable]
+   93 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:13:38 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:35: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                   ^~~~~~~
+../Core/Src/main.c:99:35: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:61: error: 'ADC_VALUE' undeclared (first use in this function); did you mean 'VDD_VALUE'?
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                                             ^~~~~~~~~
+      |                                                             VDD_VALUE
+../Core/Src/main.c:99:61: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:99:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                           ^~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+../Core/Src/main.c:99:43: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:91:11: warning: variable 'ADC_value' set but not used [-Wunused-but-set-variable]
+   91 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:14:34 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:3: error: 'ADC_value' undeclared (first use in this function)
+   98 |   ADC_value = HAL_ADC_GetValue(&hadc1);
+      |   ^~~~~~~~~
+../Core/Src/main.c:98:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:99:35: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                   ^~~~~~~
+../Core/Src/main.c:99:35: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_VALUE), 1000);
+      |                                           ^~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+../Core/Src/main.c:99:43: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:15:19 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:35: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_value), 1000);
+      |                                   ^~~~~~~
+../Core/Src/main.c:99:35: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "software_timer.h"
+  +++ |+#include <stdio.h>
+   27 | #include <string.h>
+../Core/Src/main.c:99:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   99 |   HAL_UART_Transmit(&huart2, str, sprintf(str, "!ADC:%ld#", ADC_value), 1000);
+      |                                           ^~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+../Core/Src/main.c:99:43: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13640	    120	   1800	  15560	   3cc8	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:36:23 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:10: warning: unused variable 'str' [-Wunused-variable]
+  101 |  uint8_t str[50];
+      |          ^~~
+../Core/Src/main.c:100:11: warning: unused variable 'ADC_value' [-Wunused-variable]
+  100 |  uint32_t ADC_value = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:60:13: warning: 'MX_TIM2_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14248	    120	   1888	  16256	   3f80	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+21:45:02 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/software_timer.c:8:10: fatal error: timer.h: No such file or directory
+    8 | #include "timer.h"
+      |          ^~~~~~~~~
+../Core/Src/ uart_communication.c:8:10: fatal error: timer.h: No such file or directory
+    8 | #include "timer.h"
+      |          ^~~~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [Core/Src/subdir.mk:42: Core/Src/software_timer.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:40: Core/Src/ uart_communication.o] Error 1
+../Core/Src/main.c:25:10: fatal error: timer.h: No such file or directory
+   25 | #include "timer.h"
+      |          ^~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:42: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:45:28 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+../Core/Src/main.c:25:10: fatal error: timer.h: No such file or directory
+   25 | #include "timer.h"
+      |          ^~~~~~~~~
+compilation terminated.
+../Core/Src/ uart_communication.c:9:10: fatal error: uart.h: No such file or directory
+    9 | #include "uart.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:42: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:40: Core/Src/ uart_communication.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:45:46 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:26:10: fatal error: uart.h: No such file or directory
+   26 | #include "uart.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:42: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/ uart_communication.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/ uart_communication.c:33:34: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   33 |     HAL_UART_Receive_IT(&huart2, &temp, 1);
+      |                                  ^~~~~
+      |                                  |
+      |                                  char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/software_timer.h:11,
+                 from ../Core/Src/ uart_communication.c:8:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:728:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  728 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:45:56 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: multiple definition of `huart2'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/main.c:44: multiple definition of `hadc1'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/ uart_communication.c:13: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: LAB5.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:46:42 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/ uart_communication.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/ uart_communication.c:33:34: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   33 |     HAL_UART_Receive_IT(&huart2, &temp, 1);
+      |                                  ^~~~~
+      |                                  |
+      |                                  char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/software_timer.h:11,
+                 from ../Core/Src/ uart_communication.c:8:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:728:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  728 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: multiple definition of `huart2'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/main.c:44: multiple definition of `hadc1'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/ uart_communication.c:13: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: LAB5.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:48:46 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/ uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ uart_communication.d" -MT"Core/Src/ uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ uart_communication.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: multiple definition of `huart2'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Inc/uart_communication.h:12: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/main.c:44: multiple definition of `hadc1'; ./Core/Src/ uart_communication.o:D:/Microcontroller/LAB/LAB5/STM/LAB5/Debug/../Core/Src/ uart_communication.c:13: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: LAB5.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:48:33 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/command_parser.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser.d" -MT"Core/Src/command_parser.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Core/Src/timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/timer.d" -MT"Core/Src/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/timer.o"
+arm-none-eabi-gcc "../Core/Src/uart_communication.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart_communication.d" -MT"Core/Src/uart_communication.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/uart_communication.o"
+arm-none-eabi-gcc -o "LAB5.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB\LAB5\STM\LAB5\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB5.elf
+ 
+arm-none-eabi-size   LAB5.elf 
+arm-none-eabi-objdump -h -S  LAB5.elf  > "LAB5.list"
+arm-none-eabi-objcopy  -O ihex  LAB5.elf  "LAB5.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16872	    160	   1808	  18840	   4998	LAB5.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB5.hex
+ 
+Finished building: LAB5.list
+ 
+20:48:55 **** Incremental Build of configuration Debug for project LAB5 ****
+make -j8 all 
+arm-none-eabi-size   LAB5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16872	    160	   1808	  18840	   4998	LAB5.elf
+Finished building: default.size.stdout
+ 
